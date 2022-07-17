@@ -1,0 +1,290 @@
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>Extrait de compte</a>
+      <ng-template ngbNavContent>
+            <div class="card" >
+                <div class="card-header" style="padding-bottom: 4px">
+                <h5 class="card-header-text">Search</h5>
+                <button id="edit-btn" type="button" class="btn btn-sm waves-effect waves-light f-right">
+                    <i class="ti-search"></i>
+                </button>
+                </div>
+            <div class="card-body" style="padding-top: 6px">
+                <div class=" container row">
+                    <div class="col-md">
+                        <label for="exampleFormControlInput1 text-muted" class="form-label">Client</label>
+                        <div class="row">
+                            <div class="col-md">
+                                <input type="number" class="form-control" id="exampleFormControlInput1" ><br/>
+                        </div>
+                            <button style="height: fit-content" type="button" class="btn btn-primary">Search</button>
+                        </div>
+                        <input type="text" class="form-control col_md" disabled id="exampleFormControlInput1" >
+                        
+                    </div>
+                    
+                </div>
+                
+                  <hr/>
+                  <p class="text-secondary"><b>Recherche Avancée</b></p>
+                  <div class=" container row">
+                    <fieldset  class=" p-2" style="width: 100px ;border-left:5px solid skyblue">
+
+                        <legend class="float-none w-auto" style="margin-bottom: 0px;font-size: medium;font-family: 'themify'">Ordre</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Date
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Lettre
+                            </label>
+                          </div>
+                      </fieldset>
+                      <fieldset  class=" p-2 offset-1" style="border-left: 2px solid skyblue">
+
+                        <legend class="float-none w-auto" style="margin-bottom: 0px;font-size: medium;font-family: 'themify'">Période</legend>
+                        <div class="mb-3 row">
+                            <label style="margin-left: 20px" for="inputPassword">Du</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputPassword">
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label style="margin-left: 20px" for="inputPassword">Au</label>
+                            <div class="col-sm-10">
+                                <select id="hello-single" class="form-control">
+                                    <option value="">---- Marital Status ----</option>
+                                    <option value="married">Married</option>
+                                    <option value="single" selected>Single</option>
+                                    <option value="unmarried">Unmarried</option>
+                                  </select>
+                            </div>
+                          </div>
+                          
+                            
+                      </fieldset>
+                      <fieldset  class="p-2 offset-1" style="border-left: 2px solid skyblue">
+
+                        <legend class="float-none w-auto" style="margin-bottom: 0px;font-size: medium;font-family: 'themify'">Affichage</legend>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Toute
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  N.L à la date
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Non lettrées
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Lettrées
+                                </label>
+                              </div>
+                            
+                      </fieldset>
+                      
+                  </div>
+                  
+                  
+            </div>
+            <div class="input-group mb-3 container">
+                <span class="input_text" style="padding-top: 8px;">Journal</span>
+                <input class="form-control col-md-6" style="margin-left: 7px"type="text" placeholder="Default input" aria-label="default input example">
+              </div>
+
+            </div>
+            <div class="card b-l-danger business-info services">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Jai</th>
+                <th scope="col">Pièce</th>
+                <th scope="col">NAT</th>
+                <th scope="col">Pi.Ext</th>
+                <th scope="col">Libéllé</th>
+                <th scope="col">Réf.let</th>
+                <th scope="col">Débit</th>
+                <th scope="col">Let.</th>
+                <th scope="col">Crédit</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Saisie de pièces comptables </a>
+      <ng-template ngbNavContent>
+            <div class="card b-l-info business-info services">
+                <div class="container">
+                  <br />
+                    <p class="text-secondary"><b>Entete piéce</b></p>
+                    <div class="container row">
+                        <div class="mb-3 row">
+                            <label style="margin-left: 20px" for="inputPassword">Journal</label>
+                            <div class="col-sm-10">
+                                <select id="hello-single" class="form-control">
+                                    <option value="">---- Marital Status ----</option>
+                                    <option value="married">Married</option>
+                                    <option value="single" selected>Single</option>
+                                    <option value="unmarried">Unmarried</option>
+                                  </select>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label style="margin-left: 20px" for="inputPassword">Série</label>
+                            <div class="col-sm-10">
+                                <select id="hello-single" class="form-control">
+                                    <option value="">---- Marital Status ----</option>
+                                    <option value="married">Married</option>
+                                    <option value="single" selected>Single</option>
+                                    <option value="unmarried">Unmarried</option>
+                                  </select>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">Numero</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+
+                    </div>
+                    <hr />
+                    <div class="container row">
+                      <div class="col mb-3 row ">
+                        <label  for="exampleFormControlInput1" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="col mb-3 row" style="margin-left: 0px;">
+                          <label for="exampleFormControlInput1" class="form-label">Nature</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="col mb-3 row" style="margin-left: 0px;">
+                          <label for="exampleFormControlInput1" class="form-label">N°Externe</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="col mb-3 row" style="margin-left: 0px;">
+                          <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">Référence</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+
+                  </div>
+                  <hr />
+                  <div class="card">
+                    <div class="card-header">
+                      Détail Pièce 
+                    </div>
+                    <button type="button" class="btn btn-info" aria-label="Close" (click)="open(content)">
+                      <i class="icofont icofont-ui-add"></i>
+                    </button>
+                    <!-- Modal -->
+                    <ng-template #content let-modal>
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="modal-basic-title">Ajouter un nouveau piéce</h4>
+                        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                          <i class="icofont icofont-ui-close"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="container row">
+                            <div class="mb-3">
+                              <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">Libelle</label>
+                              <input type="text" class="form-control" >
+                            </div>
+                            <div class="mb-3 offset-1">
+                              <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">Compte</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                              <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">Débit</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 offset-1">
+                              <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">Contrepartie</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                              <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">NAT</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 offset-1">
+                              <label style="margin-left: 20px" for="exampleFormControlInput1" class="form-label">N°Ext</label>
+                              <input type="text" class="form-control">
+                            </div>
+                              
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Annuler</button>
+                        <button type="button" class="btn btn-outline-success" (click)="modal.close('Save click')">Ajouter</button>
+                      </div>
+                      
+                    </ng-template>
+                        <!--End Model-->
+                    
+                  </div>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th> Lig</th>
+                        <th>Libéllé</th>
+                        <th>Compte</th>
+                        <th>Débit</th>
+                        <th>Contrepartie</th>
+                        <th>Nat</th>
+                        <th>N°Ext</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
